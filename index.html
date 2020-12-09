@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | treedecorating</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 920px; height: 690px; background: #231F20"></canvas>
+    <script src="Build/webbuild.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/webbuild.data.br",
+        frameworkUrl: "Build/webbuild.framework.js.br",
+        codeUrl: "Build/webbuild.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "dylanturner",
+        productName: "treedecorating",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
